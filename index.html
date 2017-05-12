@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Authenticationn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="https://use.fontawesome.com/df9142ddd8.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="js/facebook.js"></script>
+    <script src="js/view.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header mynav clearfix">
+            <nav>
+                <ul class="nav nav-pills float-right">
+                    <li class="nav-item">
+                        <button id="fb-logout" class="btn btn-primary btn-fb btn-sm">
+                            <i id="logout-fb" class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+                            Log out
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <a href="/Facebook-login" class="text-muted">Social Auth</a>
+        </div>
+        <br>
+        <br>
+        <div id="login" class="card login-card">
+            <img class="card-img-top" src="assets/forest.jpg" alt="Card image cap">
+            <div class="card-block">
+                <p class="card-text">Log in to view your profile and more</p>
+                <div id="login-container">
+                    <div id="fb-btn"
+                         class="fb-login-button"
+                         data-max-rows="1"
+                         data-size="large"
+                         onlogin="checkLoginState();"
+                         data-button-type="continue_with"
+                         data-show-faces="false"
+                         data-auto-logout-link="false"
+                         data-use-continue-as="true"
+                         data-scope="public_profile, email, user_birthday">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="profile" class="card"></div>
+            </div>
+            <div class="col-sm-8">
+                <div id="posts"></div>
+            </div>
+        </div>
+
+    </div>
+
+    </body>
+</html>

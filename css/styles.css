@@ -1,0 +1,86 @@
+.fb-login-button {
+    margin: auto;
+}
+
+.card-block {
+    text-align: center;
+    padding-top: 5px !important;
+}
+
+.profile-picture-block {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #4267b2 !important;
+    border-color: #4267b2 !important;
+}
+
+@media screen and (max-width: 768px) {
+    #profile {
+        margin-bottom: 25px;
+    }
+}
+
+.login-card {
+    max-width: 700px;
+    margin: auto;
+}
+
+.card-img-top {
+    width: 100%;
+    height:auto;
+}
+
+.profile-ul {
+    list-style: none;
+    padding: 0%;
+    text-align: left;
+}
+
+#profile, #logout, #login, #navigation {
+    display: none;
+}
+
+.mynav {
+    background-color: white;
+    padding: 2%;
+    margin-top: 2%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.site-title {
+    vertical-align: -webkit-baseline-middle;
+}
+
+.profile-picture {
+    border-radius: 50% !important;
+    max-width: 85px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: -42px !important;
+    width: 85px !important;
+    margin-bottom: 1% !important;
+}
+
+.profile-link {
+    text-align: center;
+}
+
+#logout-fb {
+    margin-right: 10px;
+}
+
+.btn-fb {
+    background-color: #4267b2 !important;
+    border-color: #4267b2 !important;
+}
+
+.btn-fb:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: #f3f3f3 !important;
+}
